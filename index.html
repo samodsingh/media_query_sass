@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Responsive Web page</title>
 </head>
 <body>
     <div class="container">
         <div class="container__row">
-          <div class="container__col-sm-12 container__col-md-12">sm12, md4</div>
-          <div class="container__col-sm-12 container__col-md-6">sm12, md4</div>
-          <div class="container__col-sm-12 container__col-md-6">sm12, md4</div>
+            <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
+            <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
+            <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
         </div>
-
-      
-      </div>
-      
+    </div>
+    
+    <div class="container--fluid">
+        <div class="container__row">
+            <div class="container__col-sm-12 container__col-md-6 higher">6md, 12sm</div>
+            <div class="container__col-sm-12 container__col-md-6 higher">
+                <div class="container__row nested">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-12">12lg, 4md, 12sm</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
